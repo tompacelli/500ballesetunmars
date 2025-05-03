@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500€ et un mars</title>
+    <style>
+        /* Base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Cormorant Garamond', 'Didot', 'Times New Roman', serif;
+            background-color: #ffffff;
+            color: #003b2e;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 480px;
+            padding: 20px;
+        }
+        
+        .title {
+            font-size: 72px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+            color: #000000;
+        }
+        
+        .subtitle {
+            font-size: 28px;
+            font-weight: 300;
+            letter-spacing: 1.5px;
+            color: #666666;
+            font-style: italic;
+        }
+        
+        .logo {
+            margin-top: 60px;
+            font-size: 12px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #888888;
+        }
+        
+        /* Subtle animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .title, .subtitle {
+            animation: fadeIn 1.2s ease-out forwards;
+        }
+        
+        .subtitle {
+            animation-delay: 0.3s;
+            opacity: 0;
+        }
+        
+        /* Border details */
+        .border-detail {
+            width: 40px;
+            height: 1px;
+            background-color: #d4d4d4;
+            margin: 40px auto;
+        }
+        
+        /* Media queries */
+        @media (max-width: 375px) {
+            .title {
+                font-size: 60px;
+            }
+            
+            .subtitle {
+                font-size: 24px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .title {
+                font-size: 86px;
+            }
+            
+            .subtitle {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">500€</h1>
+        <h2 class="subtitle">et un mars</h2>
+        
+        <div class="border-detail"></div>
+        
+        <div class="logo">
+            <svg width="120" height="120" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <text x="150" y="120" font-family="Times New Roman, serif" font-size="60" text-anchor="middle" fill="#1a1a1a">ti-</text>
+                <text x="150" y="200" font-family="Times New Roman, serif" font-size="60" text-anchor="middle" fill="#1a1a1a">titre.</text>
+            </svg>
+        </div>
+    </div>
+</body>
+</html>
