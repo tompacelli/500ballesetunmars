@@ -67,11 +67,15 @@
             to { opacity: 1; transform: translateY(0); }
         }
         
-        .title, .subtitle {
+        .title {
+            animation: fadeIn 2s ease-out forwards;
+        }
+
+        .subtitle {
             animation: fadeIn 1.2s ease-out forwards;
         }
         
-        .subtitle {
+        .subtitle, .subsubtitle {
             animation-delay: 0.3s;
             opacity: 0;
         }
